@@ -28,9 +28,8 @@ function App() {
     <>
       <h1>Nested Mapping</h1>
       {users.map((user , index) => {return <div key={index}>
-        <h3> fulname:
-        {user.name}
-      </h3> ,  <p>age:{user.age}</p> 
+        <h3> fulname: {user.name}</h3>
+         <p>age:{user.age}</p> 
        {user.phones.map(( phone , index ) => <p key={index}>number:{phone.home}</p> )}  
       </div> }) }
     </>
